@@ -24,3 +24,9 @@ ENV GTEST_ROOT=/usr/src/googletest
 
 WORKDIR /home/source
 VOLUME ["/home/source"]
+
+# copy install folder
+COPY ./install_folder .
+
+# entrypoint
+CMD ["/bin/bash"]
